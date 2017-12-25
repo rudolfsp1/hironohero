@@ -95,6 +95,11 @@ text-transform: uppercase;
 transform: skewY(5deg);
 }
 
+.skewed-box > .wrapper
+{
+  clear:both;
+}
+
 .skewed-box-quote
 {
 float: right;
@@ -172,4 +177,38 @@ footer .copyright
   margin: 5%;
   text-transform: uppercase;
   font-size: 1rem;
+}
+
+.banner .overlay
+{
+  position:absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+}
+
+.banner .overlay .box h2 {
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-shadow: 4px 6px black;
+}
+
+.banner .overlay .box
+{
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner .overlay  a
+{
+  text-decoration: none;
+  color: white;
+}
+
+.banner .overlay .box img
+{
+  margin: 1rem auto;
 }

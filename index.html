@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HiroNoHero</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
   </head>
   <body>
@@ -55,11 +57,41 @@
             <div class="wrapper">
               <div class="banners">
 
-                  <img src="first-banner.png" alt="">
+                  <div class="banner" data-overlay="#firstOverlay">
+                      <img src="first-banner.png" alt="">
+                      <div id="firstOverlay" class="overlay">
+                        <a href="#">
+                          <div class="box">
+                            <img src="https://vignette.wikia.nocookie.net/sonic/images/c/c6/Sonic_Heroes_Artwork_-_Logo_%28Fly_Formation_Icon%29.png/revision/latest?cb=20101017205422" alt="">
+                            <h2>What's new?</h2>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
 
-                  <img src="first-banner.png" alt="">
+                  <div class="banner" data-overlay="#secondOverlay">
+                      <img src="first-banner.png" alt="">
+                      <div id="secondOverlay" class="overlay">
+                        <a href="#">
+                          <div class="box">
+                            <img src="https://vignette.wikia.nocookie.net/sonic/images/c/c6/Sonic_Heroes_Artwork_-_Logo_%28Fly_Formation_Icon%29.png/revision/latest?cb=20101017205422" alt="">
+                            <h2>What's new?</h2>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
 
-                  <img src="first-banner.png" alt="">
+                  <div class="banner" data-overlay="#thirdOverlay">
+                      <img src="first-banner.png" alt="">
+                      <div id="thirdOverlay" class="overlay">
+                        <a href="#">
+                          <div class="box">
+                            <img src="https://vignette.wikia.nocookie.net/sonic/images/c/c6/Sonic_Heroes_Artwork_-_Logo_%28Fly_Formation_Icon%29.png/revision/latest?cb=20101017205422" alt="">
+                            <h2>What's new?</h2>
+                          </div>
+                        </a>
+                      </div>
+                  </div>
 
               </div>
 
@@ -109,12 +141,33 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
     $(document).ready(function(){
-      $('.banners').slick({
+
+      var $banners = $('.banners');
+      var $slides = $('.banner');
+
+      $banners.slick({
         autoplay: true,
         fade: true,
-        mobileFirst: true,
         dots: true,
       });
+
+      $slides.each( function() {
+        $overlay = $( $(this).data('overlay') );
+        $overlay.height( $(this).height() );
+      });
+
+      $slides.on('mouseover', function()
+      {
+          $overlay = $( $(this).data('overlay') );
+          $overlay.show();
+      });
+
+      $slides.on('mouseout', function()
+      {
+          $overlay = $( $(this).data('overlay') );
+          $overlay.hide();
+      });
+
     });
     </script>
   </body>
