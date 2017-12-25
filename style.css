@@ -220,4 +220,9 @@ footer .copyright
   {
     display:none;
   }
+
+  .main-title
+  {
+    font-size: 3rem;
+  }
 }
