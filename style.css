@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
 html,body
 {
   padding:0;
@@ -9,7 +10,7 @@ body
 {
   max-width:1280px;
   margin:0 auto;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-style: italic;
 }
 
@@ -115,7 +116,10 @@ justify-content: center;
 {
 display: inline-block;
 padding: 1rem;
+margin: 1rem;
+color:black;
 text-align: center;
+background: white;
 }
 
 .team-cards .card
@@ -160,4 +164,12 @@ footer .subscribe-box input,
 footer .subscribe-box h3
 {
   display: inline-block;
+}
+
+footer .copyright
+{
+  text-align: center;
+  margin: 5%;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
