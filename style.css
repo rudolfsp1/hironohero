@@ -214,3 +214,10 @@ footer .copyright
   margin: 1rem auto;
   width: 6vw;
 }
+
+@media (max-width: 800px) {
+  .banner .overlay .box img
+  {
+    display:none;
+  }
+}
