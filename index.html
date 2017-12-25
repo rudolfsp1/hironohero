@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HiroNoHero</title>
+    <style media="screen">
+    @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:700');
+    html,body
+    {
+      padding:0;
+      margin:0;
+    }
+
+    body
+    {
+      max-width:1280px;
+      margin:0 auto;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: italic;
+    }
+
+    body img,
+    body video,
+    body iframe,
+    body figure
+    {
+      max-width: 100%;
+    }
+
+    .main-title
+    {
+      margin: 0 auto;
+      color: white;
+      font: bolder normal 8rem/1.5 'Montserrat',sans-serif;
+      font-style: normal;
+      text-shadow: 25px -14px #ba001a, 2px 9px #b74040;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    .main-navigation li
+    {
+      display: inline-block;
+    }
+
+    .main-navigation li a
+    {
+      padding:0;
+      text-decoration: none;
+      color: #ba001a
+    }
+
+    .main-navigation li:not(:first-child)
+    {
+      margin-left:5px;
+    }
+
+    .main-navigation ul
+  {
+    margin-top:0;
+    list-style: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 0;
+  }
+
+  header
+  {
+    width:100%;
+    margin: 0 auto;
+  }
+
+  .skewed-box {
+  background-color: black;
+  margin-top: 50px;
+  padding: 5% 0;
+  border-top: solid #ba001a 1rem;
+  border-bottom: solid #ba001a 1rem;
+  color:white;
+
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
+
+.skewed-box section h2
+{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.skewed-box > .wrapper, .skewed-box > .skewed-box-quote {
+  -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
+.skewed-box-quote
+{
+  float: right;
+  color:white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding:0 20px;
+}
+
+.team-cards
+{
+  margin: 0 auto;
+  text-align: cente;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team-cards .card
+{
+  display: inline-block;
+  padding: 1rem;
+  text-align: center;
+}
+
+.team-cards .card
+{
+  font-size: 2rem;
+}
+
+footer
+{
+  margin-top:5%;
+  font-size:2rem;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">
+        HiroNoHero
+      </h1>
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+
+          <li>
+            <a href="#">Videos</a>
+          </li>
+
+          <li>
+            <a href="#">Comics</a>
+          </li>
+
+          <li>
+            <a href="#">Originals</a>
+          </li>
+
+          <li>
+            <a href="#">Art</a>
+          </li>
+
+          <li>
+            <a href="#">Contact</a>
+          </li>
+
+          <li>
+            <a href="#">Merch</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <div class="skewed-box">
+            <div class="skewed-box-quote">
+              <p>
+                HiroNoHero is a web based creative studio, <br/>
+                Aimed at delivering humorous, moving and <br/>
+                entertaining content for people of all ages
+              </p>
+            </div>
+            <div class="wrapper">
+              <div class="banners">
+                <div class="banner-item">
+                  <img src="/first-banner.png" alt="">
+                </div>
+              </div>
+
+              <section>
+                <h2>
+                  Our team
+                </h2>
+                <div class="team-cards">
+                  <div class="card">
+                    <img src="http://via.placeholder.com/180x210" alt="">
+                    <h3>
+                      WRITERS
+                    </h3>
+                  </div>
+
+                  <div class="card">
+                    <img src="http://via.placeholder.com/180x210" alt="">
+                    <h3>
+                      ARTISTS
+                    </h3>
+                  </div>
+
+                  <div class="card">
+                    <img src="http://via.placeholder.com/180x210" alt="">
+                    <h3>
+                      ACTORS
+                    </h3>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+    </div>
+    <footer>
+      <div class="subscribe-box">
+        <h3>
+        Stay up to date!
+        </h3>
+      </div>
+    </footer>
+  </body>
+</html>
